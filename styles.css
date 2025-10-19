@@ -1,0 +1,174 @@
+ /* Custom styles for specific elements not easily achievable with pure Tailwind */
+
+        /* Define the primary green color used in the design */
+        :root {
+            --color-primary-green: #4CAF50;
+            --color-light-gray: #f7f7f7;
+            --color-dark-text: #333333;
+        }
+
+        /* Set a custom font (Inter/Open Sans style) */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-dark-text);
+        }
+
+        /* Custom shape for the Hero section image background */
+        .hero-shape {
+            /* This is a complex shape, best achieved with SVG or a background image,
+               but we can approximate a rounded, organic feel with shadows and clip-path/border-radius */
+            background-color: var(--color-light-gray);
+            border-bottom-left-radius: 80% 50%;
+            border-top-right-radius: 60% 70%;
+            overflow: hidden; /* To contain the image */
+            position: relative;
+        }
+
+        /* Inner green organic shape overlay (approximate) */
+        .hero-shape::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-primary-green) 0%, transparent 70%);
+            /* Further shaping needed for exact match, but this gives the color blend */
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+            opacity: 0.1;
+        }
+
+        /* Custom styles for the About section image/text arrangement */
+        .about-section-img-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Style for the "15+ YEARS OF EXPERIENCE" badge */
+        .experience-badge {
+            background-color: var(--color-primary-green);
+            color: white;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            position: absolute;
+            bottom: 20%;
+            left: -10%; /* Adjust as needed */
+            transform: rotate(-5deg);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            z-index: 10;
+        }
+
+        /* Green text color helper class */
+        .text-jobbe-green {
+            color: var(--color-primary-green);
+        }
+
+        /* Solid green button style */
+        .btn-primary {
+            background-color: var(--color-primary-green);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem; /* rounded-md */
+            font-weight: 600; /* semi-bold */
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #388E3C; /* Darker green on hover */
+        }
+
+        /* Utility for the green checkmark icon */
+        .verified-icon::before {
+            content: '✓';
+            color: var(--color-primary-green);
+            font-weight: 900;
+            margin-right: 0.25rem;
+        }
+        
+        :root {
+            --color-primary-green: #4CAF50;
+            --color-light-gray: #f7f7f7;
+            --color-dark-text: #333333;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-dark-text);
+        }
+
+        /* Custom shape for the Hero section image background */
+        .hero-shape {
+            background-color: var(--color-light-gray);
+            border-bottom-left-radius: 80% 50%;
+            border-top-right-radius: 60% 70%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero-shape::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-primary-green) 0%, transparent 70%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+            opacity: 0.1;
+        }
+
+        /* About section styles */
+        .about-section-img-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .experience-badge {
+            background-color: var(--color-primary-green);
+            color: white;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            position: absolute;
+            bottom: 20%;
+            left: -10%;
+            transform: rotate(-5deg);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            z-index: 10;
+        }
+
+        /* General utility classes */
+        .text-jobbe-green {
+            color: var(--color-primary-green);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary-green);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #388E3C;
+        }
+
+        .verified-icon::before {
+            content: '✓';
+            color: var(--color-primary-green);
+            font-weight: 900;
+            margin-right: 0.25rem;
+        }
+
+        /* Dropdown specific styles */
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown.open .dropdown-menu {
+            display: block;
+        }

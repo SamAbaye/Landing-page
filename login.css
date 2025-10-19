@@ -1,0 +1,35 @@
+  :root {
+      --color-primary-green: #4CAF50;
+      --color-dark-text: #333333;
+  }
+
+  body {
+      font-family: 'Inter', sans-serif;
+      color: var(--color-dark-text);
+      background-color: #f0f2f5;
+      /* Light background for auth pages */
+  }
+
+  .text-jobbe-green {
+      color: var(--color-primary-green);
+  }
+
+  .btn-primary {
+      background-color: var(--color-primary-green);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      transition: background-color 0.2s;
+  }
+
+  .btn-primary:hover {
+      background-color: #388E3C;
+  }
+
+  /* Custom styles for input focus */
+  .form-input:focus {
+      border-color: var(--color-primary-green);
+      box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+      outline: none;
+  }

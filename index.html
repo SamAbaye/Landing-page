@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobbe - Find Your Next Career</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white">
+
+    <header class="shadow-sm fixed top-0 left-0 w-full bg-white z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="text-3xl font-extrabold text-jobbe-green">Jobbe</div>
+
+            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#" class="hover:text-jobbe-green">Home</a>
+                <a href="#" class="hover:text-jobbe-green">About us</a>
+            
+                <div class="relative dropdown" data-dropdown-id="job-list-menu">
+                    <a href="#" class="hover:text-jobbe-green flex items-center cursor-pointer"
+                        onclick="toggleDropdown('job-list-menu')">
+                        Job List <span class="ml-1 text-xs">▼</span>
+                    </a>
+                    <div class="dropdown-menu absolute right-0 mt-3 w-48 bg-white rounded-md shadow-lg py-1 z-20">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Jobs</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Full Time</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Part Time</a>
+                    </div>
+                </div>
+            
+                <a href="#" class="hover:text-jobbe-green">Contact us</a>
+            
+                <a href="login.html" class="hover:text-jobbe-green">Login</a>
+                <a href="signup.html" class="hover:text-jobbe-green">Sign Up</a>
+            
+            </nav>
+
+            <a href="login.html" class="btn-primary py-2 px-4 shadow-lg">POST A JOB</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <section
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-sm font-semibold text-gray-500 tracking-wider mb-2">LETS START YOUR CAREER HERE!</p>
+                <h1 class="text-5xl font-extrabold leading-tight mb-6 text-gray-900">
+                    Looking for a career change? Browse our job listings now!
+                </h1>
+                <p class="text-gray-600 mb-8 max-w-lg">
+                    Mus vehicula dignissim quis si lorem libero cras pulvinar pret dapibus. Nullam velit ante et
+                    bibendum sem etiam porta justo pulvinar risus lobortis.
+                </p>
+
+                <div class="flex items-center space-x-4 mb-10">
+                    <div class="flex -space-x-2 overflow-hidden">
+                        <span class="w-6 h-6 rounded-full bg-gray-400 border-2 border-white"></span>
+                        <span class="w-6 h-6 rounded-full bg-gray-500 border-2 border-white"></span>
+                        <span class="w-6 h-6 rounded-full bg-gray-600 border-2 border-white"></span>
+                    </div>
+                    <p class="font-bold text-gray-700">540 K+ Member Active</p>
+                </div>
+
+                <a href="#" class="btn-primary px-8 py-3 text-lg shadow-xl">BROWSE JOB</a>
+            </div>
+
+            <div class="hero-shape h-[450px] flex items-center justify-center shadow-2xl">
+                <img src="business-man-banner-concept-with-copy-space.jpg" alt="" class="hero-img h-100">
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-jobbe-green">
+                    <div
+                        class="mb-4 w-12 h-12 bg-jobbe-green bg-opacity-10 rounded-full flex items-center justify-center text-jobbe-green text-xl font-bold">
+                        👤</div>
+                    <h3 class="text-xl font-bold mb-3">Talents Agency</h3>
+                    <p class="text-gray-600 text-sm">Facilisi vivamus ultrices cubilia donec porttitor, dapibus.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-jobbe-green">
+                    <div
+                        class="mb-4 w-12 h-12 bg-jobbe-green bg-opacity-10 rounded-full flex items-center justify-center text-jobbe-green text-xl font-bold">
+                        🚪</div>
+                    <h3 class="text-xl font-bold mb-3">Portal Job</h3>
+                    <p class="text-gray-600 text-sm">Facilisi vivamus ultrices cubilia donec porttitor, dapibus.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-jobbe-green">
+                    <div
+                        class="mb-4 w-12 h-12 bg-jobbe-green bg-opacity-10 rounded-full flex items-center justify-center text-jobbe-green text-xl font-bold">
+                        💼</div>
+                    <h3 class="text-xl font-bold mb-3">Careers Coaching</h3>
+                    <p class="text-gray-600 text-sm">Facilisi vivamus ultrices cubilia donec porttitor, dapibus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="about-section-img-container h-[450px]">
+                <div class="hero-shape h-full flex items-center justify-center shadow-2xl">
+                    <img src="business-woman-red-jacket-isolated-office.jpg" alt="">
+                </div>
+                <div class="experience-badge">15+ YEARS OF EXPERIENCE</div>
+            </div>
+
+            <div>
+                <p class="text-sm font-semibold text-gray-500 tracking-wider mb-2">OUR MISSION</p>
+                <h2 class="text-4xl font-extrabold leading-snug mb-6 text-gray-900">
+                    Bridge for industrial and corporate development.
+                </h2>
+                <p class="text-gray-600 mb-8 max-w-lg">
+                    Dapibus velit laoreet facilisi hac netus amet donec. Tincidunt fringilla aliquam sed est natoque
+                    fringilla augue mollis.
+                </p>
+                <a href="#" class="btn-primary py-3 px-6 shadow-lg">DISCOVER MORE</a>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="text-4xl font-extrabold text-center mb-16 text-gray-900">
+                Latest Job Listing
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="job-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t border-gray-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <p class="text-sm font-medium text-gray-500 verified-icon">Verified Company</p>
+                        <div
+                            class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-500 font-bold">
+                            F</div>
+                    </div>
+                    <h4 class="text-lg font-bold mb-1">IT Support Associate</h4>
+                    <p class="text-sm text-gray-500 mb-4">FoxHUB Studios - Jakarta, Indonesia</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-600 font-medium">Full Time</span>
+                        <span class="text-lg font-bold text-jobbe-green">$20K - $25K</span>
+                    </div>
+                    <button onclick="applyNow('IT Support Associate', 'FoxHUB Studios')"
+                        class="btn-primary w-full text-center py-2 text-sm">APPLY NOW</button>
+                </div>
+
+                <div
+                    class="job-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t border-gray-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <p class="text-sm font-medium text-gray-500 verified-icon">Verified Company</p>
+                        <div
+                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 font-bold">
+                            T</div>
+                    </div>
+                    <h4 class="text-lg font-bold mb-1">Android Developer</h4>
+                    <p class="text-sm text-gray-500 mb-4">Treva Agency - Jakarta, Indonesia</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-600 font-medium">Full Time</span>
+                        <span class="text-lg font-bold text-jobbe-green">$25K - $30K</span>
+                    </div>
+                    <button onclick="applyNow('Android Developer', 'Treva Agency')"
+                        class="btn-primary w-full text-center py-2 text-sm">APPLY NOW</button>
+                </div>
+
+                <div
+                    class="job-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t border-gray-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <p class="text-sm font-medium text-gray-500 verified-icon">Verified Company</p>
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-500 font-bold">
+                            M</div>
+                    </div>
+                    <h4 class="text-lg font-bold mb-1">Senior Manager</h4>
+                    <p class="text-sm text-gray-500 mb-4">Muzica Studio - Jakarta, Indonesia</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-600 font-medium">Full Time</span>
+                        <span class="text-lg font-bold text-jobbe-green">$45K - $55K</span>
+                    </div>
+                    <button onclick="applyNow('Senior Manager', 'Muzica Studio')"
+                        class="btn-primary w-full text-center py-2 text-sm">APPLY NOW</button>
+                </div>
+
+                <div
+                    class="job-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t border-gray-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <p class="text-sm font-medium text-gray-500 verified-icon">Verified Company</p>
+                        <div
+                            class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-500 font-bold">
+                            E</div>
+                    </div>
+                    <h4 class="text-lg font-bold mb-1">Web Developer</h4>
+                    <p class="text-sm text-gray-500 mb-4">Earth Community - Jakarta, Indonesia</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-600 font-medium">Full Time</span>
+                        <span class="text-lg font-bold text-jobbe-green">$20K - $23K</span>
+                    </div>
+                    <button onclick="applyNow('Web Developer', 'Earth Community')"
+                        class="btn-primary w-full text-center py-2 text-sm">APPLY NOW</button>
+                </div>
+
+                <div
+                    class="job-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t border-gray-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <p class="text-sm font-medium text-gray-500 verified-icon">Verified Company</p>
+                        <div
+                            class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-500 font-bold">
+                            A</div>
+                    </div>
+                    <h4 class="text-lg font-bold mb-1">Digital Marketer</h4>
+                    <p class="text-sm text-gray-500 mb-4">Atica Ltd - Jakarta, Indonesia</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-600 font-medium">Full Time</span>
+                        <span class="text-lg font-bold text-jobbe-green">$20K - $27K</span>
+                    </div>
+                    <button onclick="applyNow('Digital Marketer', 'Atica Ltd')"
+                        class="btn-primary w-full text-center py-2 text-sm">APPLY NOW</button>
+                </div>
+
+                <div
+                    class="job-card bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 border-t border-gray-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <p class="text-sm font-medium text-gray-500 verified-icon">Verified Company</p>
+                        <div
+                            class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-pink-500 font-bold">
+                            F</div>
+                    </div>
+                    <h4 class="text-lg font-bold mb-1">UI/UX Designer</h4>
+                    <p class="text-sm text-gray-500 mb-4">Fossa News - Jakarta, Indonesia</p>
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-sm text-gray-600 font-medium">Full Time</span>
+                        <span class="text-lg font-bold text-jobbe-green">$20K - $25K</span>
+                    </div>
+                    <button onclick="applyNow('UI/UX Designer', 'Fossa News')"
+                        class="btn-primary w-full text-center py-2 text-sm">APPLY NOW</button>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h3 class="text-2xl font-bold text-center mb-12 text-gray-900">Featured Company</h3>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-50">
+                <div class="text-4xl font-extrabold text-gray-800">velocity9</div>
+                <div class="text-4xl font-bold italic text-gray-700">treva.</div>
+                <div class="text-4xl font-extrabold text-pink-600">muzica</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-50 mt-10 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-gray-500">
+            <p>&copy; 2025 Jobbe. All rights reserved. Designed for excellence.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-jobbe-green">Privacy Policy</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="hover:text-jobbe-green">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="action-modal"
+        class="hidden fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center z-[100]">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full relative">
+            <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl"
+                onclick="closeModal()">&times;</button>
+            <h3 id="modal-title" class="text-2xl font-bold mb-4 text-jobbe-green">Action Confirmation</h3>
+            <p id="modal-message" class="text-gray-700 mb-6">Thank you for your interest! This is a demo template
+                action.</p>
+            <button onclick="closeModal()" class="btn-primary w-full py-2">Close</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
